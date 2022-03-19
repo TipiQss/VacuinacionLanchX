@@ -1,0 +1,522 @@
+/*Style general*/
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    color: #193C73;
+    font-size: 3.5em;
+    font-weight:800;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+
+h2{
+    color: #193C73;
+    font-size: 2em;
+    font-weight:800;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #6D7C94;
+    font-stretch:semi-expanded;
+    letter-spacing: 0.5px;
+}
+
+
+form{
+    width: 70%;
+}
+
+
+p{
+    color: #6D7C94;
+    font-stretch:semi-expanded;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    line-height: 2;
+}
+
+
+i{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #EBF1FD;
+    color: #3850C8;
+}
+
+
+/* Esto es la barra de navegacion */
+
+
+.logo{
+        color: #2549C9;
+        font-size: 1.9em;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+}
+
+
+.navBar{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+
+.navItems {
+        list-style-type: none;
+        display: flex;
+}
+
+
+.navItem a {
+        display: inline-block;
+        padding: 10px 30px;
+}
+
+    
+.navItem:hover {
+        background-color: #2549C9;
+        border-radius: 5px;
+        box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+    
+.navItem:hover a {
+        color: white;
+        border-radius: 5px;
+        box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+
+/* La primera mitad de la pantalla */
+
+
+.primerContenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.primerSupContenedor{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+
+.primerSupContenedor h1, .primerSupContenedor p{
+    width: 75%;
+    padding-top: 5%;
+    padding-left: 15%;
+}
+
+
+.cualidades{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cualidades i {
+    color: #FFD10A;
+    background-color: #FFF2BD;
+    padding: 3px;
+}
+
+
+/* la mitad de la imagen */
+
+
+.primerSupContenedorImagen{
+    width: 50%;
+    display: flex;
+    height: 500px;
+    z-index: unset;
+}
+
+.primerSupContenedorImagen img{
+    max-width: 100%;
+    height: 135%;
+    object-fit: cover;
+    z-index: unset;
+}
+
+
+/* el formato de vacunaccion */
+
+.formatoDelTextoDelForm{
+    color: #193C73;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.formStyle{
+    background-color: white;
+    border-style: none;
+    border-radius: 9px;
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+    padding: 2% 5%;
+    margin-top: 2%;
+}
+
+
+.locationsBox, .appointmentBox, .vaccineBox, .submitBox{
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 4%;
+    width:20%;
+    padding: 2px;
+}
+
+
+select[name=lugar]{
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #193C73;
+    padding: 1%;
+    width: 100%;
+}
+
+
+input[name=fecha]{
+    color: #193C73;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    padding: 1%;
+    width: 100%;
+}
+
+
+select[name=marcaVacuna]{
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #193C73;
+    padding: 1%;
+    width: 100%;
+}
+
+
+input[type=submit]{
+    padding: 9%;
+    font-weight: bold;
+    font-stretch:semi-expanded;
+    background-color: #2549C9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90%;
+    margin-left: 10%;
+}
+
+
+/* imagenes de las marcas */
+
+
+.sectionMarcas {
+    width: 100%;
+    max-height: fit-content;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.imgMarca {
+    width: 23%;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+
+
+/* segundo contenedor */
+
+
+.segundoContenedor{
+    width: 100%;
+    height: auto;
+    float: left;
+    flex-direction: column;
+    height: 200px;
+    padding-top: 25px;
+    margin-bottom: 75px;
+}
+
+
+.segundoContenedor h2, .segundoContenedor p{
+    width: 40%;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+
+/* tercera secsiom cuadritos */
+
+
+.tercerContenedor {
+    width: 100%;
+    max-height: fit-content;
+    padding: 1% 5%;
+}
+
+
+.tercerSupContenedor {
+    width: 23%;
+    float: left;
+    justify-content: space-between;
+    border-color: #FAFAFF;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    margin: 1%;
+    height: 350px;
+    margin-top: 5%;
+}
+
+.tercerContenedor i{
+    font-size: 2em;
+}
+
+.tercerSupContenedor:hover, .contatoContenedores:hover{
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+/* cuarta secsion */
+
+
+.cuartoContendeor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+}
+
+
+details summary {  
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.flechita{
+    position: absolute;
+    right: 1px;  
+    margin-right: 13%;
+}
+
+
+.supContenedorCuartaParte{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    padding-left: 5%;
+}
+
+
+.contenedorDetails{
+    height: 20%;
+    width: 80%;
+    border-color: #FAFAFF;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 3%;
+    align-content: center;
+    justify-content: center;
+    padding-top: 1%;
+    margin: 2%; 
+}
+
+
+/* Quinto contenedor */
+
+
+.quintoContendeor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+
+.quintoSupContendeor{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.infoContenedor{
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 80%;
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contatoContenedores{
+    width: 40%;
+    border-radius: 5%;
+    padding: 5%;
+    margin: 5%;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+
+
+.contatoContenedores h3{
+    float: left;
+    margin-left: 10%;
+    font-size: 1.2em;
+    color: #193C73;
+}
+
+
+.contatoContenedores p{
+    margin-left: 10%;
+    font-size: .8em;
+    float: left;
+}
+
+
+.contatoContenedores i{
+    font-size: 2.5em;
+    float: left;
+}
+
+
+.contatoContenedores button {
+    width: 100%;
+    border-style: none;
+    background-color: #EBF1FE;
+    color: #2549C9;
+    font-weight: bold;
+    font-stretch:semi-expanded;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+/* sexto contenedor */
+
+
+
+.sextoContenedor{
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    background-color: #EEF3FF;
+    flex-wrap: wrap;
+}
+
+
+.sextoSupContenedor{
+    height: 10%;
+    width: 40%;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+
+.contenedorAbouts{
+    width: 50%;
+    max-height: 80%;
+    margin-top: 3%;
+}
+
+
+.sextoSupContenedorAbout{
+    width: 33%;
+    float: left;
+    line-height: 2;
+}
+
+
+.aboutList{
+    margin-top: 5%;
+    list-style: none;
+}
+
+
+.ultimaParte{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+}
+
+.allRigh{
+    width: 50%;
+    margin-left: 8%;
+    padding-bottom: 2%;
+}
+
+.termsAgreements{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.termsAgreements a{
+    margin-left: 5%;
+}
+
+.sextoContenedor span{
+    color: #193C73;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
